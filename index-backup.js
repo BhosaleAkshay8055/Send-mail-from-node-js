@@ -35,7 +35,7 @@ app.post('/send-email', upload.single('attachment'), (req, res) => {
         secure: false,  // Set to true if using SSL/TLS
         auth: {
         user: 'bhosale71096@gmail.com',  // Replace with your email address
-        pass: 'tbxe xzld slre ezcb'          // Replace with your email password or app password
+        pass: ''          // Replace with your email password or app password
         }
   });
 
