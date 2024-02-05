@@ -28,7 +28,9 @@ This project is a simple job application form that allows users to submit their 
    git clone https://github.com/BhosaleAkshay8055/Send-mail-from-node-js.git
    npm i
    node index.js
-  ```
+   ```
+
+
 ## Usage
 1. Fill out the job application form with your details.
 2. Attach your resume (PDF format).
