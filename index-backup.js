@@ -19,15 +19,6 @@ app.get('/', (req, res) => {
 app.post('/send-email', upload.single('attachment'), (req, res) => {
   const { to, subject, text } = req.body;
 
-    //   // Create a transporter using SMTP
-    //   const transporter = nodemailer.createTransport({
-    //     service: 'smtp.gmail.com',
-    //     auth: {
-    //       user: 'bhosale71096@gmail.com',  // Replace with your email address
-    //       pass: 'tbxe xzld slre ezcb'          // Replace with your email password
-    //     }
-    //   });
-
   // Create a transporter using SMTP
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',  // Update with your SMTP host
