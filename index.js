@@ -25,16 +25,6 @@ app.get('/', (req, res) => {
 app.post('/send-email', upload.single('pdf'), (req, res) => {
   const { name, email, phone, address, designation, experience, specialization, present_ctc, expected_ctc, notice_period } = req.body;
 
-  console.log('111111111111111', req.body)
-    //   // Create a transporter using SMTP
-    //   const transporter = nodemailer.createTransport({
-    //     service: 'smtp.gmail.com',
-    //     auth: {
-    //       user: 'bhosale71096@gmail.com',  // Replace with your email address
-    //       pass: 'tbxe xzld slre ezcb'          // Replace with your email password
-    //     }
-    //   });
-
   // Create a transporter using SMTP
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',  // Update with your SMTP host
